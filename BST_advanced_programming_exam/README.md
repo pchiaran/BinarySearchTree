@@ -1,6 +1,6 @@
 # Binary search tree implementented in c++
 
-# Compilation a run
+# Compilation and run
 To compile the code just type in command line
 
 make
