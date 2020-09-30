@@ -23,7 +23,7 @@ public:
 	  
 	 /**** CONSTRUCTOR ***/
 
-	  explicit BST_iterator(node* x) noexcept : current{x} { std::cout << "Iterator default constructor" << std::endl; }
+	  explicit BST_iterator(node* x) noexcept : current{x} {}
 
 
 	  //Dereference operator to obtain the node value 
