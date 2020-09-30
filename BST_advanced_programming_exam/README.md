@@ -20,7 +20,7 @@ and than repeat the compilation.
 # Code details
 The Binary Serach Tree is implemented in the following way.
 
-There are three header files in the folder "include"
+There are three header files in the folder "include" and one in the folder "src"
 
 - In /include/node.hpp you can find the definition and implementation of the class node used as building blocks for the tree. Each node stores a templated value (here implemented as an std::pair<Key,Value>) and three pointers to other nodes which are the parent node and the right and left children.
 
