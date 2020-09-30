@@ -9,7 +9,7 @@ This will compile the two .cpp files "main.cpp" and "src/bst.cpp" including all 
 
 ./bst
 
-This will produce an output with all the tests on implemented functions. The output should be self-explainatory of what is being tested and what should be the output.
+This will produce an output on screen with all the tests on implemented functions. The output should be self-explainatory of what is being tested and what should be the output.
 
 To recompile the code you need to first type
 
