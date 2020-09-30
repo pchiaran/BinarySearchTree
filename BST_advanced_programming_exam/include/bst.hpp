@@ -24,7 +24,7 @@ public:
 
 	/******* CONSTRUCTOR, COPY AND MOVE SEMANTIC ********/
 
-	bst() noexcept : op{}, head{nullptr} { std::cout << "BST default constructor" << std::endl; }		//default bst constructor. Comparison set to std::less and head to nullptr
+	bst() noexcept : op{}, head{nullptr} {}		//default bst constructor. Comparison set to std::less and head to nullptr
 
 	explicit bst(bst&&) noexcept = default;		//default move constructor
 
