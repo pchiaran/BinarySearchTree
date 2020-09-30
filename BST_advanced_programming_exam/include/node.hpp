@@ -29,11 +29,11 @@ namespace NODE{
 		//user-defined default constructor. It initializes the node value to the default value depending on type T and the three node's pointers to nullptr
 		node() noexcept : value{}, left{nullptr}, right{nullptr}, upper{nullptr} {} 
 		
-    		//custom constructor to initialize a node using an lvalue. This copies an exixsting node
+    		//custom constructor to initialize a node using an lvalue
 		node(const T& v, node<T>* up) noexcept : value{v}, left{nullptr}, right{nullptr}, upper{up} {}
 
-		//custom constructor to initialize a node using an rvalue
-		node(T&& v, node<T>* up) noexcept : value{v}, left{nullptr}, right{nullptr}, upper{up} {}
+		//custom move constructor to initialize a node using an rvalue
+		node(T&& v, node<T>* up) noexcept : value{std::move(v)}, left{nullptr}, right{nullptr}, upper{up} {}
 
 		//set bst and iterator as friend classes to access node's private members in them
 		template<typename K, typename V, typename cmp>
